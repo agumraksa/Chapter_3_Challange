@@ -7,8 +7,8 @@
     <title>Homepage</title>
 </head>
 <body>
-    <section id="topscreen">
-        <nav id="navbar">
+    <header class="topscreen">
+        <nav class="navbar">
             <div>
                 <div class="menulogo">Logo</div>
             </div>
@@ -28,6 +28,15 @@
             <p class="desc">Experience new traditional game play</p>
             <button class="btnplay">PLAY NOW</button>
         </div>
+    </header>
+    <section class="gamechoice">
+        <div class="gamechoice-content">
+            <div class="gamechoice-desc">
+                <h3>What's so special?</h3>
+                <h1>THE GAMES</h1>
+            </div>
+            <div class="gamechoice-gallery"></div>
+        </div>
     </section>
 </body>
 <style>
@@ -36,13 +45,13 @@
         margin: 0;
         box-sizing: border-box;
     }
-    #topscreen {
+    .topscreen {
         background-image: url(./assets/main-bg.jpg);
         background-size: cover;
         width: 100vw;
         height: 100vh;
     }
-    #navbar {
+    .navbar {
         height: 90px;
         display: flex;
         justify-content: space-between;
@@ -51,7 +60,7 @@
         background-color: rgba(0, 0, 0, 0.5);
         overflow: hidden;
     }
-    #navbar a {
+    .navbar a {
         float: left;
         color: #f2f2f2;
         text-align: center;
@@ -59,7 +68,7 @@
         text-decoration: none;
         font-size: 17px;
     }
-    #navbar a:hover {
+    .navbar a:hover {
         background-color: #ddd;
         color: black;
     }
@@ -152,5 +161,21 @@
     .btnplay:hover {
         background-color: #cf8a22;
         color: #1A1917;
+    }
+    .gamechoice {
+        /*background-image: url(./assets/the-games-bg.jpg);*/
+        background-color: red;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100vw;
+        height: 100vh;
+    }
+    .gamechoice-content {
+        background-color: blue;
+        display: flex;
+    }
+    .gamechoice-desc {
+        color: #ddd;
+    }
 </style>
 </html>
